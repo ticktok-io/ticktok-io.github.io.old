@@ -1,2 +1,8 @@
 name: Ticktok.io
+title: TICKTOK.IO
+baseurl: "" # For the Live WEBSITE
+url: "https://ticktok.io/" # FOR THE LIVE MEAN WEBSITE
+twitter_username: ticktok-io
+github_username:  ticktok-io
+
 markdown: kramdown
