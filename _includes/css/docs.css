@@ -1,0 +1,60 @@
+article * {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+article p {
+    font-weight: 300;
+    color: #4A4A4A;
+}
+
+article h3 {
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+/* code */
+.code {
+    border-radius: 3px;
+    font-family: Space Mono, SFMono-Regular, Menlo,Monaco, Consolas, Liberation Mono, Courier New, monospace;
+    background: var(--bg-color);
+    border: 1px solid var(--code-bg-color);
+    color: var(--primary-color-light);
+}
+
+.code--block {
+    white-space: pre-line;
+    padding: 0 1.5rem;
+}
+
+.code--inline {
+    padding: 3px 6px;
+    font-size: 80%;
+}
+
+/* table */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    transition: color .3s ease-out;
+    margin-bottom: 2rem;
+}
+
+table td, table th {
+    border: 1px solid var(--code-bg-color);
+    padding: 0.8rem;
+    font-weight: 300;
+}
+
+table th {
+    text-align: left;
+    background-color: white;
+    border-color: white;
+    border-bottom-color: var(--code-bg-color);
+}
+
+table td:first-child {
+    background-color: var(--bg-color);
+    font-weight: 600;
+}
+
+
