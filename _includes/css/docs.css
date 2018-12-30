@@ -1,3 +1,7 @@
+.wrapper {
+    display: flex;
+    flex-grow: 1;
+}
 article * {
     font-family: 'Nunito Sans', sans-serif;
 }
@@ -55,6 +59,124 @@ table th {
 table td:first-child {
     background-color: var(--bg-color);
     font-weight: 600;
+}
+
+/* doc */
+.doc__bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 28%;
+    background-color: var(--bg-color);
+    z-index: -1;
+}
+
+.doc__nav {
+    flex-basis: 20%;
+    font-weight: 200;
+}
+
+.doc__nav ul {
+    list-style: none;
+    padding-left: 0;
+    line-height: 1.8;
+}
+
+.doc__nav ul.fixed {
+    position: fixed;
+    top: 2rem;
+}
+
+.doc__nav li:hover {
+    color: var(--primary-color-light);
+    cursor: pointer;
+    transition: color .3s ease-in-out;
+}
+
+.doc__nav .selected {
+    color: var(--accent-color);
+    position: relative;
+}
+
+.doc__nav .selected:after {
+    position: absolute;
+    content: "";
+    width: 1rem;
+    height: 1.1rem;
+    background-color: var(--accent-color);
+    left: -1.5rem;
+    top: 0.8rem;
+}
+
+.doc__content {
+    flex-basis: 80%;
+    padding: 0 0 5rem 1rem;
+}
+
+/* tabs */
+.tab__container {
+    position: relative;
+}
+
+.tab__container > ul {
+    position: absolute;
+    list-style: none;
+    margin: 0;
+    right: 1rem;
+    top: -2rem;
+    padding-left: 0;
+}
+
+.tab__container .code {
+    white-space: normal;
+    padding: 1rem 1.5rem;
+}
+
+.tab {
+    display: inline-block;
+    padding: 0.3rem 0.5rem;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+.tab.active {
+    border-bottom: 1px solid var(--primary-color);
+    font-weight: 700;
+    display: inline-block;
+}
+
+.tab__pane {
+    display: none;
+}
+
+.tab__pane.active {
+    display: block;
+}
+
+@media (max-width: 750px) {
+    .wrapper {
+        flex-direction: column;
+    }
+    .doc__content {
+        padding-left: 0;
+    }
+    .doc__nav ul {
+        border-bottom: 1px solid var(--code-bg-color);
+        padding-bottom: 0.5rem;
+    }
+    .doc__nav ul.fixed {
+        /* nutralized the fixed menu for mobile*/
+        position: relative;
+        top: 0;
+    }
+    .doc__nav li {
+        display: inline-block;
+        padding-right: 1rem;
+    }
+    .doc__nav .selected:after {
+        display: none;
+    }
 }
 
 

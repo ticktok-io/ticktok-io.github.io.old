@@ -1,0 +1,23 @@
+<section class="js-section">
+  <h3 class="section__title">Server Deployment</h3>
+  <p>Learn how to configure and install Ticktok.io server</p>
+  <h3 class="section__title">Perquisites</h3>
+  <ul>
+    <li><a href="https://www.mongodb.com/">MongoDB</a> - Used for persistent and clustering</li>
+    <li><a href="https://www.rabbitmq.com/">RabbitMQ</a> - All ticks delivered on rabbit queues</li>
+  </ul>
+  <h3 class="section__title">Installation</h3>
+  <div class="code__block code__block--notabs">
+      <pre class="code code--block">
+        <code>
+          docker run \
+            -e RABBIT_URI=amqp://rabbit.domain/vhost
+            -e MONGO_URI=mongodb://domain/db
+            -e SELF_DOMAIN=http://domain
+            -e ACCESS_TOKEN=aaf4c61ddcc5e8a2dabede0f3b482cd9aea9434d
+            -p 8080:8080
+            ticktok/ticktok:0.2.0
+        </code>
+      </pre>
+  </div>
+</section>
