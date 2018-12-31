@@ -6,6 +6,6 @@ This is the website source, you can visit it here: https://ticktok.io
 With Ruby 2.x installed
 ```
 bundle install 
-bundle install exec jekyll
+bundle exec jekyll serve
 ```
 
