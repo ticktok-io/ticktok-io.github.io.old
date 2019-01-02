@@ -1,73 +1,17 @@
-<article class="doc__content">
-  <section class="js-section">
-    <h3 class="section__title">Server Deployment</h3>
-    <p>Learn how to configure and install Ticktok.io server</p>
-    <h3 class="section__title">Perquisites</h3>
+<div class="wrapper">
+  <aside class="doc__nav">
     <ul>
-      <li><a href="https://www.mongodb.com/">MongoDB</a> - Used for persistent and clustering</li>
-      <li><a href="https://www.rabbitmq.com/">RabbitMQ</a> - All ticks delivered on rabbit queues</li>
+      <li class="js-btn selected">Server Deployment</li>
+      <li class="js-btn">Dashboard</li>
+      <li class="js-btn">Official SDKs</li>
+      <li class="js-btn">Scheduling Intervals</li>
     </ul>
-    <h3 class="section__title">Installation</h3>
-    <div class="code__block code__block--notabs">
-      <pre class="code code--block">
-        <code>
-          docker run \
-            -e RABBIT_URI=amqp://rabbit.domain/vhost
-            -e MONGO_URI=mongodb://domain/db
-            -e SELF_DOMAIN=http://domain
-            -e ACCESS_TOKEN=aaf4c61ddcc5e8a2dabede0f3b482cd9aea9434d
-            ticktok/ticktok:0.2.0
-        </code>
-      </pre>
-    </div>
-  </section>
-  <section class="js-section">
-    <h3 class="section__title">Configuration</h3>
-    <p>All configurations should be passed as environment variables to the Docker on run</p>
-    <table id="options">
-      <tr>
-        <th>Options</th>
-        <th>Value</th>
-        <th>Default</th>
-        <th>Required</th>
-      </tr>
-      <tr>
-        <td>RABBIT_URI</td>
-        <td>Rabbit uri that is available to both the server and the consumers, if there's a need to expose different uri
-          to the consumers, use CONSUMER_RABBIT_URI
-        </td>
-        <td>-</td>
-        <td>Yes</td>
-      </tr>
-      <tr>
-        <td>RABBIT_CONSUMER_URI</td>
-        <td>Use this to set a different rabbit uri for consumers, most of the time you'll want this to reduce
-          permissions of consumers
-        </td>
-        <td>-</td>
-        <td>No</td>
-      </tr>
-      <tr>
-        <td>MONGO_URI</td>
-        <td>This should include the database name as follows: <i>mongodb://domain/db_name</i></td>
-        <td>-</td>
-        <td>Yes</td>
-      </tr>
-      <tr>
-        <td>SELF_DOMAIN</td>
-        <td>This is the actual url the server is serving from, it allows the api to retrieve correct links back to it
-        </td>
-        <td>-</td>
-        <td>Yes</td>
-      </tr>
-      <tr>
-        <td>ACCESS_TOKEN</td>
-        <td>This is the security token, it should be encoded using SHA1</td>
-        <td>-</td>
-        <td>Yes</td>
-      </tr>
-    </table>
-    <p>The server will serve at port 8080 by default</p>
-    <hr/>
-  </section>
-</article>
+  </aside>
+  <article class="doc__content">
+    {% include docs/0.2.x/server_start.html %}
+    {% include docs/0.2.x/server_config.html %}
+    {% include docs/0.2.x/dashboard.html %}
+    {% include docs/0.2.x/official_sdks.html %}
+    {% include docs/0.2.x/schedule_interval.html %}
+  </article>
+</div>

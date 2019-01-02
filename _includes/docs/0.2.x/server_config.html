@@ -1,0 +1,50 @@
+<section class="js-section">
+  <h3 class="section__title">Configuration</h3>
+  <p>All configurations should be passed as environment variables to the Docker on run</p>
+  <table id="options">
+    <tr>
+      <th>Option</th>
+      <th>Value</th>
+      <th>Default</th>
+      <th>Required</th>
+    </tr>
+    <tr>
+      <td>RABBIT_URI</td>
+      <td>Rabbit uri that is available to both the server and the consumers, if there's a need to expose different
+        uri
+        to the consumers, use CONSUMER_RABBIT_URI
+      </td>
+      <td>-</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>RABBIT_CONSUMER_URI</td>
+      <td>Use this to set a different rabbit uri for consumers, most of the time you'll want this to reduce
+        permissions of consumers
+      </td>
+      <td>-</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>MONGO_URI</td>
+      <td>This should include the database name as follows: <i>mongodb://domain/db_name</i></td>
+      <td>-</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>SELF_DOMAIN</td>
+      <td>This is the actual url the server is serving from, it allows the api to retrieve correct links back to it
+      </td>
+      <td>-</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>ACCESS_TOKEN</td>
+      <td>This is the security token, it should be encoded using SHA1</td>
+      <td>-</td>
+      <td>Yes</td>
+    </tr>
+  </table>
+  <p>The server will serve at port 8080 by default</p>
+  <hr/>
+</section>

@@ -1,0 +1,36 @@
+<section class="js-section">
+  <h3 class="section__title">Scheduling Intervals</h3>
+  <p>When there is a need for a tick every interval user these expressions</p>
+  <table id="sdks">
+    <tr>
+      <th>Expression</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>every.X.seconds</td>
+      <td>Tick every X seconds</td>
+    </tr>
+    <tr>
+      <td>every.X.minutes</td>
+      <td>Tick every X minutes</td>
+    </tr>
+    <tr>
+      <td>every.X.hours</td>
+      <td>Tick every X hours</td>
+    </tr>
+  </table>
+  <div class="installation">
+    <h4 class="section__title">Example</h4>
+    <div class="tab__container">
+      <ul class="tab__menu">
+        <li class="tab active" data-tab="java">java</li>
+        <li class="tab" data-tab="js">js</li>
+        <li class="tab" data-tab="clojure">clojure</li>
+      </ul>
+      <pre class="code"><code class="tab__pane active java">{% include docs/0.2.x/schedule_interval_java.html %}</code>
+        <code class="tab__pane js">{% include docs/0.2.x/schedule_interval_js.html %}</code>
+        <code class="tab__pane clojure">{% include docs/0.2.x/schedule_interval_clojure.html %}</code>
+      </pre>
+    </div>
+  </div>
+</section>
