@@ -20,7 +20,6 @@ body {
 nav {
     display:table;
     width:100%;
-    margin: 0;
     background-color: #9baeb1;
 }
 
@@ -28,6 +27,7 @@ nav ul {
     font-size: x-large;
     padding-top: 10px;
     text-align: right;
+    margin-right: 40px;
 }
 
 nav ul, footer ul {
@@ -36,7 +36,7 @@ nav ul, footer ul {
 }
 .blurb ul li, nav ul li, footer ul li {
     display: inline;
-    margin-right: 20px;
+    margin: 10px;
 }
 
 .container {
@@ -56,19 +56,23 @@ nav a {
 a:hover {
     text-decoration: underline;
 }
+
+.blurb * {
+    font-family: 'Nunito Sans', serif;
+}
+
 .blurb h1 {
     font-size: 3em;
-    font-family: 'Helvetica', 'Arial', 'Sans-Serif', serif;
 }
 .blurb p {
     font-size: 1.5em;
-    line-height: 1.4em;
+    line-height: 1.6em;
+    padding-top: 10px;
     color: #333;
 }
 footer {
     margin-top: 40px;
     padding-top: 10px;
-    font-family:'Open Sans', sans-serif;
     border-top: 1px solid #d5d5d5;
 }
 
@@ -82,4 +86,41 @@ ul.posts li {
 }
 .blurb {
     text-align: center;
+    padding-top: 20px;
 }
+
+.col-md-4 * {
+    font-family: 'Nunito Sans', serif;
+}
+
+.col-md-4 {
+    padding-top: 40px;
+}
+
+.col-md-4 p {
+    font-size: 1.1em;
+    color: #393939;
+    line-height: 1.8em
+}
+
+.col-md-4 img {
+    padding: 20px;
+}
+
+.col-md-4 h4 {
+    padding: 12px;
+    font-weight: normal;
+}
+
+.social {
+    padding-top: 20px;
+    padding-inline-start: 0;
+}
+
+.credits * {
+    color: white;
+
+}
+
+
+
