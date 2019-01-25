@@ -6,7 +6,6 @@
       <th>Option</th>
       <th>Value</th>
       <th>Default</th>
-      <th>Required</th>
     </tr>
     <tr>
       <td>RABBIT_URI</td>
@@ -15,21 +14,20 @@
         to the consumers, use CONSUMER_RABBIT_URI
       </td>
       <td>-</td>
-      <td>Yes</td>
     </tr>
     <tr>
       <td>RABBIT_CONSUMER_URI</td>
       <td>Use this to set a different rabbit uri for consumers, most of the time you'll want this to reduce
         permissions of consumers
       </td>
-      <td>-</td>
-      <td>No</td>
+      <td>RABBIT_URI</td>
     </tr>
     <tr>
       <td>MONGO_URI</td>
-      <td>This should include the database name as follows: <i>mongodb://domain/db_name</i></td>
-      <td>-</td>
-      <td>Yes</td>
+      <td>This should include the database name as follows: <i>mongodb://domain/db_name</i>. If no value is given it
+        will be configured to an internal in-memory database. <span class="warning">Internal database should be used for testing purpose only.</span>
+      </td>
+      <td>internal</td>
     </tr>
     <tr>
       <td>ACCESS_TOKEN</td>
@@ -37,7 +35,6 @@
         purpose. You should replace it for production environments.</span>
       </td>
       <td>ticktok-zY3wpR</td>
-      <td>No</td>
     </tr>
   </table>
   <p>The server will serve at port 8080 by default</p>
