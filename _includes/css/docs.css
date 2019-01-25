@@ -162,7 +162,7 @@ table td:first-child {
 }
 
 .warning {
-    color: red;
+    color: orange;
     font-style: italic;
     font-size: 95%;
 }
