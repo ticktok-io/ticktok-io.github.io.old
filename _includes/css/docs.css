@@ -1,6 +1,7 @@
 .wrapper {
     display: flex;
     flex-grow: 1;
+	align-items: baseline;
 }
 article * {
     font-family: 'Nunito Sans', sans-serif;
@@ -79,6 +80,7 @@ table td:first-child {
 .doc__nav {
     flex-basis: 20%;
     font-weight: 200;
+	margin-right: 50px;
 }
 
 .doc__nav ul {

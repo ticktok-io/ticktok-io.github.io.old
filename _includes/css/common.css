@@ -23,9 +23,35 @@ nav {
     background-color: #9baeb1;
 }
 
+.nav {
+	display: none;
+}
+
+.nav li {
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+}
+
+.showNav {
+	display: block;
+}
+
+.nav-icon {
+	float: right;
+	padding-top: 10px;
+	margin: 10px;
+	cursor: pointer;
+}
+
+.nav-icon ion-icon {
+	font-size: 200%;
+}
+
 nav ul {
-    font-size: x-large;
-    padding-top: 10px;
+    font-size: 1.3em;
+    padding-top: 8px;
+	padding-bottom: 5px;
     text-align: right;
     margin-right: 40px;
 }
@@ -62,7 +88,7 @@ a:hover {
 }
 
 .blurb h1 {
-    font-size: 3em;
+    font-size: 2.7em;
 }
 .blurb p {
     font-size: 1.5em;
@@ -122,5 +148,17 @@ ul.posts li {
 
 }
 
+/* Media Queries */
 
-
+/* one line navigation for desktop and bigger resolutions */
+@media (min-width: 768px) { 
+	  
+	.nav {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+	}
+	.nav-icon {
+		display: none;
+	}
+}
