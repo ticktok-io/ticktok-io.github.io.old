@@ -23,14 +23,16 @@ nav {
     background-color: #9baeb1;
 }
 
-.nav {
+.mainNav {
 	display: none;
 }
 
-.nav li {
+.mainNav li {
+	display: flex;
+	flex-direction: column;
 	text-align: center;
-	margin: 0px;
-	padding: 0px;
+	margin: 4px 4px 0px 4px;
+	padding: 1px;
 }
 
 .showNav {
@@ -39,8 +41,8 @@ nav {
 
 .nav-icon {
 	float: right;
-	padding-top: 10px;
-	margin: 10px;
+	padding-top: 2px;
+	margin: 10px 10px 5px 10px;
 	cursor: pointer;
 }
 
@@ -49,9 +51,9 @@ nav {
 }
 
 nav ul {
+	display: block;
     font-size: 1.3em;
     padding-top: 8px;
-	padding-bottom: 5px;
     text-align: right;
     margin-right: 40px;
 }
@@ -80,7 +82,8 @@ nav a {
     color: white;
 }
 a:hover {
-    text-decoration: underline;
+	color: white;
+    text-decoration: none;
 }
 
 .blurb * {
@@ -153,7 +156,7 @@ ul.posts li {
 /* one line navigation for desktop and bigger resolutions */
 @media (min-width: 768px) { 
 	  
-	.nav {
+	.mainNav {
 		display: flex;
 		flex-direction: row;
 		justify-content: flex-end;
