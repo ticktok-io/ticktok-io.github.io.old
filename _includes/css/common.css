@@ -31,7 +31,7 @@ nav {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
-	margin: 4px 4px 0px 4px;
+	margin: 0px 4px 0px 20px;
 	padding: 1px;
 }
 
@@ -42,7 +42,7 @@ nav {
 .nav-icon {
 	float: right;
 	padding-top: 2px;
-	margin: 10px 10px 5px 10px;
+	margin: 10px 10px 7px 10px;
 	cursor: pointer;
 }
 
@@ -52,8 +52,8 @@ nav {
 
 nav ul {
 	display: block;
-    font-size: 1.3em;
-    padding-top: 8px;
+    font-size: x-large;
+    padding-top: 7px;
     text-align: right;
     margin-right: 40px;
 }
