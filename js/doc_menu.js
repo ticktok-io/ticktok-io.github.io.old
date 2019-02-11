@@ -86,6 +86,7 @@ window.addEventListener('scroll', function () {
   }
 });
 
+/* The error is in here, I'm commenting this - dont want to delete if you'll need it later.
 // responsive navigation
 var topNav = get('.menu');
 var icon = get('.toggle');
@@ -101,6 +102,19 @@ window.addEventListener('load', function(){
     }
   }
   icon.addEventListener('click', showNav);
-});
+});*/
 
 
+//new responsive nav
+let ion = document.getElementById("new");
+let navi = document.getElementById("js-nav");
+
+ion.addEventListener("click", () => {
+	if (ion.name === "menu") {
+		ion.name = "close";
+		navi.classList.toggle("showNav");
+	} else {
+		ion.name = "menu";
+		navi.classList.toggle("showNav");
+	}
+})
