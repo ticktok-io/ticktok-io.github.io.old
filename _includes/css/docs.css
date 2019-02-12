@@ -166,6 +166,7 @@ table td:first-child {
 @media (max-width: 750px) {
     .wrapper {
         flex-direction: column;
+		overflow: scroll;
     }
     .doc__content {
         padding-left: 0;
