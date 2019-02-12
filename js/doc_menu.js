@@ -109,7 +109,7 @@ window.addEventListener('load', function(){
 let ion = document.getElementById("new");
 let navi = document.getElementById("js-nav");
 
-ion.addEventListener("click", () => {
+ion.addEventListener("click", function() {
 	if (ion.name === "menu") {
 		ion.name = "close";
 		navi.classList.toggle("showNav");
