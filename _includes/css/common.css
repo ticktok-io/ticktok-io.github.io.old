@@ -79,10 +79,10 @@ a {
     text-decoration: none;
 }
 nav a {
-    color: white;
+    color: var(--white-color);
 }
 a:hover {
-	color: white;
+	color: var(--accent-color-light);
     text-decoration: none;
 }
 
@@ -129,7 +129,7 @@ ul.posts li {
 .col-md-4 p {
     font-size: 1.1em;
     color: #393939;
-    line-height: 1.8em
+    line-height: 1.8em;
 }
 
 .col-md-4 img {
@@ -142,9 +142,10 @@ ul.posts li {
 }
 
 .social {
-    padding-top: 20px;
+    padding: 20px 0px 0px 0px;
     padding-inline-start: 0;
 }
+
 
 .credits * {
     color: white;
