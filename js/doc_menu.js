@@ -60,7 +60,7 @@ function smoothScrollTo(i, event) {
   var element = sections[i];
   setActiveLink(event);
 
-  window.scrollTo({
+  window.scroll({
     'behavior': 'smooth',
     'top': element.offsetTop - 20,
     'left': 0
