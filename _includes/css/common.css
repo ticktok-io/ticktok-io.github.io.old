@@ -81,8 +81,8 @@ a {
 nav a {
     color: var(--white-color);
 }
-a:hover {
-	color: var(--accent-color-light);
+nav a:hover {
+	color: var(--white-color);
     text-decoration: none;
 }
 
