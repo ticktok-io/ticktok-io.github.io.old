@@ -52,16 +52,18 @@ nav {
 
 nav ul {
 	display: block;
-    font-size: x-large;
+    font-size: large;
+    font-weight: 500;
     padding-top: 7px;
     text-align: right;
     margin-right: 40px;
 }
 
 nav ul, footer ul {
-    font-family: 'Arial Black', 'Gadget', 'sans-serif';
+    font-family: Sans-Serif, serif;
     list-style: none;
 }
+
 .blurb ul li, nav ul li, footer ul li {
     display: inline;
     margin: 10px;
@@ -155,8 +157,8 @@ ul.posts li {
 /* Media Queries */
 
 /* one line navigation for desktop and bigger resolutions */
-@media (min-width: 768px) { 
-	  
+@media (min-width: 768px) {
+
 	.mainNav {
 		display: flex;
 		flex-direction: row;
