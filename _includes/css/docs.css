@@ -162,6 +162,12 @@ table td:first-child {
     background: transparent;
 }
 
+.warning {
+    color: orange;
+    font-style: italic;
+    font-size: 95%;
+}
+
 @media (max-width: 750px) {
     .wrapper {
         flex-direction: column;
