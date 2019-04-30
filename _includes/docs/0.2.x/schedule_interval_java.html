@@ -1,2 +1,2 @@
-Ticktok tiktok = new Ticktok("http://12347976376@ticktok.io")
-ticktok.newClock(clockName).on(schedule).invoke(() -> foo()));
+Ticktok ticktok = new Ticktok(options().domain("http://@ticktok.io").token("1234"));
+ticktok.schedule("my-clock", "every.10.seconds", () -> foo());
