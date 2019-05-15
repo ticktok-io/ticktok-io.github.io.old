@@ -1,4 +1,4 @@
 const ticktok = require('ticktok')
 
-ticktok('https://ticktok', 'token')
+ticktok('https://ticktok:9643', 'token')
   .schedule({name: 'user-mgmt:purge-users', schedule: 'every.30.seconds'}, (err, tick) => { purge() })
