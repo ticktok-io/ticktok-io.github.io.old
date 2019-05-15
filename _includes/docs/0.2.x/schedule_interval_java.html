@@ -1,2 +1,2 @@
 Ticktok ticktok = new Ticktok(options().domain("http://@ticktok.io").token("1234"));
-ticktok.schedule("my-clock", "every.10.seconds", () -> foo());
+ticktok.schedule("user-mgmt:purge-users", "every.2.minutes", () -> foo());
